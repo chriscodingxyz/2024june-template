@@ -1,7 +1,50 @@
+"use client";
+
+import ToastButton from "@/components/ToastButton";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      welcome
+    <main className="">
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
+      welcome.. <ToastButton />
+      <br />
+      <br />
+      <br />
     </main>
   );
 }

@@ -3,7 +3,7 @@ import { ModeToggle } from "@/components/ModeToggle";
 
 export default function Header() {
   return (
-    <header className="flex">
+    <header className="">
       <ModeToggle />
     </header>
   );

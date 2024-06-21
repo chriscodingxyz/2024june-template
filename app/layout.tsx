@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Silkscreen, Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
+import { Toaster } from "sonner";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const silkscreen = Silkscreen({ subsets: ["latin"], weight: "400" });
+const monsterrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,16 +21,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-full">
+      <body
+        className={`${silkscreen.className} bg-green-300 overflow-hidden border-4 border-blue-500 min-h-[100dvh] h-full`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
+          <div className="flex flex-col h-full">
+            <div className="border-4 border-red-400">
+              <Header />
+            </div>
+            <div className="border-4 border-purple-500 flex-grow flex flex-col overflow-auto">
+              {children}
+            </div>
+            <Footer />
+          </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
