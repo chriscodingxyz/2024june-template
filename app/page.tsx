@@ -1,6 +1,5 @@
-"use client";
-
 import ToastButton from "@/components/ToastButton";
+import Todos from "@/components/Todos";
 import ZustandCounterServer from "@/components/ZustandCounterServer";
 
 export default function Home() {
@@ -11,6 +10,7 @@ export default function Home() {
       </p>
       <br />
       <ZustandCounterServer />
+      <Todos />
     </main>
   );
 }
