@@ -1,50 +1,16 @@
 "use client";
 
 import ToastButton from "@/components/ToastButton";
+import ZustandCounterServer from "@/components/ZustandCounterServer";
 
 export default function Home() {
   return (
     <main className="">
-      welcome.. <ToastButton />
+      <p>
+        welcome.. <ToastButton />
+      </p>
       <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
-      welcome.. <ToastButton />
-      <br />
-      <br />
-      <br />
+      <ZustandCounterServer />
     </main>
   );
 }
