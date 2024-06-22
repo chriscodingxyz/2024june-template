@@ -9,10 +9,6 @@ type Props = {
   todo: TTodo;
 };
 
-// function toggleCheckbox(id) {}
-
-console.log("inside of tododododododod");
-
 export default function Todo({ todo }: Props) {
   return (
     <li className="border border-red-500">

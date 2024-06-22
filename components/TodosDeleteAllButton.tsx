@@ -5,12 +5,12 @@ import { Button } from "./ui/button";
 import { deleteAllTodosAction } from "@/actions/actions";
 
 export default function TodosDeleteAllButton() {
-  const asyncOnclick = async () => {
-    await deleteAllTodosAction();
-  };
-
   return (
-    <Button size={"sm"} variant={"destructive"} onClick={asyncOnclick}>
+    <Button
+      size={"sm"}
+      variant={"destructive"}
+      onClick={() => deleteAllTodosAction()}
+    >
       Delete ALL!!!! ⚠️
     </Button>
   );

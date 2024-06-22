@@ -3,21 +3,14 @@
 import { addTodo } from "@/actions/actions";
 import { Input } from "@/components/ui/input";
 import React from "react";
-import { Button } from "./ui/button";
-import { toast } from "sonner";
-import { useForm, SubmitHandler } from "react-hook-form";
-import { TTodo } from "@/lib/types";
+import { Button } from "@/components/ui/button";
+import { useForm } from "react-hook-form";
 import { TTodoSchema, zTodoSchema } from "@/lib/validations";
 import { zodResolver } from "@hookform/resolvers/zod";
-
-// interface TodoFormInputs {
-//   Ttodo;
-// }
 
 export default function AddTodos() {
   const {
     register,
-    // handleSubmit,//used in just react-hook-form method
     trigger,
     getValues,
     formState: { errors, isSubmitting },
@@ -29,11 +22,7 @@ export default function AddTodos() {
   return (
     <div className="border-4 border-green-500">
       <form>
-        <Input
-          {...register("text", { required: true })}
-          name="text"
-          placeholder="your todo"
-        />
+        <Input {...register("text")} name="text" placeholder="your todo" />
         <p className="text-red-500">{errors.text?.message}</p>
         <Button
           formAction={async (formData) => {

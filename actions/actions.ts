@@ -1,4 +1,5 @@
 "use server";
+//before we add zod validation
 
 import db from "@/db/drizzle";
 import { todo } from "@/db/schema";
@@ -10,9 +11,6 @@ export const getTodos = async () => {
 };
 
 export const addTodo = async (text: string) => {
-  //   const text = Formdata.get("text") as string;
-  console.log("this is in the server action", text);
-
   try {
     await db.insert(todo).values({
       text: text,
@@ -20,7 +18,6 @@ export const addTodo = async (text: string) => {
   } catch (error) {
     return error;
   }
-
   revalidatePath("/");
 };
 
