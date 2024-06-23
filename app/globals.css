@@ -82,3 +82,6 @@
 .flex-center-col {
   @apply flex flex-col items-center justify-center;
 }
+body {
+  background-image: url("/punks.png");
+}

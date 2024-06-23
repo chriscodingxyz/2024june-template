@@ -6,18 +6,18 @@ import ZustandCounterServer from "@/components/ZustandCounterServer";
 
 export default function Home() {
   return (
-    <main className="max-w-xl mx-auto">
-      <div className="sticky top-[-16px] z-10 bg-background ">
+    <main className="max-w-xl mx-auto bg-background/90">
+      {/* <div className="sticky top-[-16px] z-10 bg-background ">
         <h1 className="text-7xl font-extrabold border-b-4 border-primary flex items-center justify-between ">
           <div>
             <span className="text-red-500">cherry</span>dub
           </div>
 
-          <div className="p-2">
+          <div className="">
             <ToastButton>🍺</ToastButton>
           </div>
         </h1>
-      </div>
+      </div> */}
       <h1 className="text-2xl text-right text-primary/50">
         stop making templates
       </h1>

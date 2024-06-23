@@ -23,11 +23,11 @@ export function MenuButton() {
   return (
     <Sheet>
       <SheetTrigger>
-        <Button variant="ringHover">
-          <Menu />
-        </Button>
+        {/* <Button variant="ringHover"> */}
+        <Menu />
+        {/* </Button> */}
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="flex flex-col justify-between">
         <SheetHeader>
           <SheetTitle>Navigation</SheetTitle>
           <SheetDescription>
@@ -54,6 +54,30 @@ export function MenuButton() {
                 <li>Tech Stacks</li>
                 <li>Projects</li>
                 <li>Contact</li>
+              </ul>
+            </div>
+          </SheetDescription>
+        </SheetHeader>
+        <SheetHeader>
+          <SheetTitle>Socials</SheetTitle>
+          <SheetDescription>
+            <div>
+              <ul className="flex justify-around items-center">
+                <li>
+                  <i className="lab la-twitter text-xl"></i>
+                </li>
+                <li>
+                  <i className="lab la-github text-xl"></i>
+                </li>
+                <li>
+                  <i className="lab la-linkedin text-xl"></i>
+                </li>
+                <li>
+                  <i className="las la-link text-xl"></i>
+                </li>
+                <li>
+                  <i className="las la-envelope text-xl"></i>
+                </li>
               </ul>
             </div>
           </SheetDescription>

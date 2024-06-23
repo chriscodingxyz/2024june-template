@@ -22,15 +22,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full opacity-90">
+    <html lang="en" className="h-full ">
       <body className={`font-satoshi overflow-hidden min-h-[100dvh] h-full`}>
+        <link
+          rel="stylesheet"
+          href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col h-full">
+          <div className="flex flex-col h-full opacity-0 hover:opacity-100 transition-opacity duration-500">
             <div className={`${silkscreen.className}`}>
               <Header />
             </div>
