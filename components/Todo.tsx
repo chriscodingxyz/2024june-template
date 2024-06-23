@@ -11,7 +11,7 @@ type Props = {
 
 export default function Todo({ todo }: Props) {
   return (
-    <li className="border border-red-500">
+    <li className="">
       <div className="flex items-center justify-between">
         <span>
           <span>
@@ -21,13 +21,13 @@ export default function Todo({ todo }: Props) {
               onClick={() => toggleTodoCheckboxAction(todo.id)}
             />
           </span>
-          id: {todo.id}
+          #{todo.id}
         </span>
         <span>{todo.text}</span>
         <span>{todo.done ? "✅" : "❌"}</span>
         <Button
-          size={"sm"}
-          variant={"destructive"}
+          size={"tiny"}
+          variant={"default"}
           onClick={() => deleteTodoAction(todo.id)}
         >
           Delete

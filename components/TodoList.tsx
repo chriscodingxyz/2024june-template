@@ -9,7 +9,7 @@ type Props = {
 
 export default function TodoList({ todos }: Props) {
   return (
-    <ul>
+    <ul className="w-full border-t-4 border-primary border-dashed pt-2">
       {todos.map((todo) => (
         <Todo key={todo.id} todo={todo} />
       ))}

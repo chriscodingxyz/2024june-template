@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Header from "@/components/Header";
 import { Toaster } from "sonner";
 import Footer from "@/components/Footer";
+import "@/styles/fonts.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const silkscreen = Silkscreen({ subsets: ["latin"], weight: "400" });
@@ -21,10 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body
-        className={`${silkscreen.className} bg-green-300 overflow-hidden border-4 border-blue-500 min-h-[100dvh] h-full`}
-      >
+    <html lang="en" className="h-full opacity-90">
+      <body className={`font-satoshi overflow-hidden min-h-[100dvh] h-full`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -32,13 +31,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <div className="flex flex-col h-full">
-            <div className="border-4 border-red-400">
+            <div className={`${silkscreen.className}`}>
               <Header />
             </div>
-            <div className="border-4 border-purple-500 flex-grow flex flex-col overflow-auto">
+            <div className=" flex-grow flex flex-col overflow-auto px-4">
               {children}
             </div>
-            <div className="border-4 border-pink-500">
+            <div className="">
               <Footer />
             </div>
           </div>

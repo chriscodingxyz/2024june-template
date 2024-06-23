@@ -11,7 +11,7 @@ export default function TodosDeleteAllButton() {
       variant={"destructive"}
       onClick={() => deleteAllTodosAction()}
     >
-      Delete ALL!!!! ⚠️
+      Delete ALL ⚠️
     </Button>
   );
 }

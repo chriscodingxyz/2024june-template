@@ -20,8 +20,8 @@ export default function AddTodos() {
   });
 
   return (
-    <div className="border-4 border-green-500">
-      <form>
+    <div className="">
+      <form className="flex gap-1">
         <Input {...register("text")} name="text" placeholder="your todo" />
         <p className="text-red-500">{errors.text?.message}</p>
         <Button

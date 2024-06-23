@@ -8,10 +8,10 @@ export default function TodosDeleteAllDoneButton() {
   return (
     <Button
       size={"sm"}
-      variant={"destructive"}
+      variant={"secondary"}
       onClick={() => deleteAllDoneTodosAction()}
     >
-      Delete All DONE TODOS
+      Delete DONE
     </Button>
   );
 }
