@@ -1,3 +1,5 @@
+import AllPunksCard from "@/components/AllPunksCard";
+import PunksCard from "@/components/PunksCard";
 import ToastButton from "@/components/ToastButton";
 import Todos from "@/components/Todos";
 import ZustandCounterServer from "@/components/ZustandCounterServer";
@@ -20,8 +22,13 @@ export default function Home() {
         stop making templates
       </h1>
       <div className="flex-center-col m-4 gap-12">
+        <PunksCard />{" "}
+        <span className="bg-gray-100">
+          A great way to start any project with Nextjs standards
+        </span>
         <ZustandCounterServer />
         <Todos />
+        <AllPunksCard />
         <br />
       </div>
     </main>

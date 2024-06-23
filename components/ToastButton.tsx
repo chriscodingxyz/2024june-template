@@ -9,5 +9,5 @@ export default function ToastButton({
 }: {
   children?: React.ReactNode;
 }) {
-  return <Button onClick={() => toast("Cheers!")}>{children}</Button>;
+  return <Button onClick={() => toast("Cheers! 🍻")}>{children}</Button>;
 }

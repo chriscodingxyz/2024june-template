@@ -9,8 +9,8 @@ export default async function Todos() {
   const todos = await getTodos();
 
   return (
-    <div className="p-2 border-4 border-primary flex-center-col max-w-2xl mx-auto shadow-[8px_8px_0px_0px_#9f9f9f] border-dashed gap-2 hover:bg-primary/5">
-      <h1 className="text-2xl font-bold flex">
+    <div className="p-2 border-4 border-primary flex-center-col max-w-2xl mx-auto shadow-[8px_8px_0px_0px_#9f9f9f] border-dashed gap-2  bg-blue-300 hover:border-solid hover:opacity-85">
+      <h1 className="text-2xl font-bold flex gap-1">
         <Image
           src="/rhflogo.png"
           alt="react-hook-form"
