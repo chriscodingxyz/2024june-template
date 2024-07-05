@@ -4,6 +4,7 @@ import { TTodo } from "@/lib/types";
 import React from "react";
 import { Button } from "./ui/button";
 import { deleteTodoAction, toggleTodoCheckboxAction } from "@/actions/actions";
+import { CircleX, Trash2 } from "lucide-react";
 
 type Props = {
   todo: TTodo;
@@ -26,11 +27,11 @@ export default function Todo({ todo }: Props) {
         <span>{todo.text}</span>
         <span>{todo.done ? "✅" : "❌"}</span>
         <Button
-          size={"tiny"}
+          size={"icon"}
           variant={"default"}
           onClick={() => deleteTodoAction(todo.id)}
         >
-          Delete
+          <Trash2 size={16} />
         </Button>
       </div>
     </li>

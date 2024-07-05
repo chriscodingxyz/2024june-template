@@ -34,11 +34,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex flex-col h-full opacity-0 hover:opacity-100 transition-opacity duration-500">
-            <div className={`${silkscreen.className}`}>
+          <div className="flex flex-col h-full ">
+            <div>
               <Header />
             </div>
-            <div className=" flex-grow flex flex-col overflow-auto px-4">
+            <div
+              className=" flex-grow flex flex-col overflow-auto px-4
+             "
+            >
               {children}
             </div>
             <div className="">
